@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #3b1c61, #000000);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
+
+.game-wrapper {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.ui-panel {
+  width: 320px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.ui-panel h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #c8a8ff;
+  margin-bottom: 14px;
+}
+
+.info-box {
+  background: rgba(10, 10, 10, 0.6);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.info-box ul {
+  margin: 6px 0 6px 0;
+  padding-left: 18px;
+}
+
+.info-box li {
+  margin-bottom: 2px;
+}
+
+.status {
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+#message {
+  margin-top: 8px;
+  color: #ffd86b;
+  min-height: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #7f5cff, #d14fff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.canvas-panel {
+  flex: 1;
+  background: radial-gradient(circle at top, #26133f, #050008);
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  border-radius: 14px;
+  background: #1b1028;
+}
+
+/* رموز صغيرة في النص */
+.tile {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.tile.exit {
+  background: #3ad66b;
+}
+
+.tile.spike {
+  background: #ff4c4c;
+}
+
+.tile.key {
+  background: #ffd86b;
+}
